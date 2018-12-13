@@ -12,8 +12,15 @@ public:
 	int8_t y;
 	int8_t z;
 	Point(int8_t xx, int8_t yy, int8_t zz);
+	Point();
 	bool Equals(Point otherPoint);
 };
+Point::Point()
+{
+	x = 0;
+	y = 0;
+	z = 0;
+}
 Point::Point(int8_t xx, int8_t yy, int8_t zz)
 {
 	x = xx;
